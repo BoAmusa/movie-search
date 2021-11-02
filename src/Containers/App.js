@@ -39,10 +39,10 @@ const App = () => {
 
   return (
     <div>
-      <div>
-        <h1 className="mv3 w-50 w-50-m w-25-l mw5 center">Movie Search</h1>
+      <div className="tc">
+        <h1 className="tc mv3 w-50 w-50-m w-50-l mw5 center">Movie Search</h1>
         <SearchBox
-          className="mv3 w-50 w-50-m w-25-l mw5 center"
+          className="tc mv3 w-50 w-50-m w-25-l mw5 center"
           onChange={(value) => handleOnChange(value)}
           onSubmit={(event) => handleOnSubmit(event)}
         />

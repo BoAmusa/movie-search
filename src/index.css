@@ -42,6 +42,9 @@ cards {
   font-family: sans-serif;
   padding-top: 30px;
   padding-bottom: 0px;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
 }
 
 .wrapper {
@@ -50,10 +53,11 @@ cards {
   margin: 0 auto;
   display: flex;
   grid-template-rows: 90px;
-  grid-gap: 10px;
+  grid-gap: 13px;
   padding-top: 20px;
   padding-bottom: 20px;
   gap: 20px;
+  top: 0;
 }
 
 .cards * {
@@ -61,28 +65,35 @@ cards {
 }
 
 .card__image {
-  width: 355px;
+  margin-top: 1rem;
+  width: 352px;
   height: 385px;
   max-width: 100%;
   max-height: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 220px));
   grid-template-rows: 100px;
   display: flex;
   box-shadow: 8px 8px 8px rgb(29, 108, 145);
-  padding-right: 3px;
-  padding-left: 3px;
+  padding-right: 2.5px;
+  padding-left: 0.3px;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 3px;
 }
 
 .card__content {
   line-height: 1.9;
-  font-size: 0.7em;
-  padding: 3px;
+  font-size: 0.8em;
+  padding: 2px;
   background: #fafafa;
   box-shadow: 8px 8px 8px rgb(29, 108, 145);
   text-align: center;
   padding-right: 3px;
-  padding-left: 3px;
-  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-bottom: 5px;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  width: 354px;
 }
 
 .card__content > p:first-of-type {
