@@ -3,7 +3,7 @@ import Movie from "./Movie";
 
 const MovieList = ({ movies }) => {
   return (
-    <div classname="wrapper">
+    <div classname="tc v-mid wrapper">
       {movies.map((results, i) => {
         return (
           <Movie
