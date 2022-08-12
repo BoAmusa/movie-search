@@ -1,26 +1,18 @@
 {
-  "files": {
-    "main.css": "/movie-search/static/css/main.1e7e43d6.chunk.css",
-    "main.js": "/movie-search/static/js/main.0698edee.chunk.js",
-    "main.js.map": "/movie-search/static/js/main.0698edee.chunk.js.map",
-    "runtime-main.js": "/movie-search/static/js/runtime-main.c5180cef.js",
-    "runtime-main.js.map": "/movie-search/static/js/runtime-main.c5180cef.js.map",
-    "static/css/2.31461e4f.chunk.css": "/movie-search/static/css/2.31461e4f.chunk.css",
-    "static/js/2.228cdba2.chunk.js": "/movie-search/static/js/2.228cdba2.chunk.js",
-    "static/js/2.228cdba2.chunk.js.map": "/movie-search/static/js/2.228cdba2.chunk.js.map",
-    "static/js/3.2ca72726.chunk.js": "/movie-search/static/js/3.2ca72726.chunk.js",
-    "static/js/3.2ca72726.chunk.js.map": "/movie-search/static/js/3.2ca72726.chunk.js.map",
-    "index.html": "/movie-search/index.html",
-    "static/css/2.31461e4f.chunk.css.map": "/movie-search/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.1e7e43d6.chunk.css.map": "/movie-search/static/css/main.1e7e43d6.chunk.css.map",
-    "static/js/2.228cdba2.chunk.js.LICENSE.txt": "/movie-search/static/js/2.228cdba2.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/movie-search/static/media/SEGA.47b4bfa9.woff"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.c5180cef.js",
-    "static/css/2.31461e4f.chunk.css",
-    "static/js/2.228cdba2.chunk.js",
-    "static/css/main.1e7e43d6.chunk.css",
-    "static/js/main.0698edee.chunk.js"
-  ]
+  "main.css": "/movie-search/static/css/main.70dac56f.chunk.css",
+  "main.js": "/movie-search/static/js/main.fc813615.chunk.js",
+  "main.js.map": "/movie-search/static/js/main.fc813615.chunk.js.map",
+  "static/js/1.be54c62a.chunk.js": "/movie-search/static/js/1.be54c62a.chunk.js",
+  "static/js/1.be54c62a.chunk.js.map": "/movie-search/static/js/1.be54c62a.chunk.js.map",
+  "static/css/2.c7762b16.chunk.css": "/movie-search/static/css/2.c7762b16.chunk.css",
+  "static/js/2.735123c5.chunk.js": "/movie-search/static/js/2.735123c5.chunk.js",
+  "static/js/2.735123c5.chunk.js.map": "/movie-search/static/js/2.735123c5.chunk.js.map",
+  "runtime~main.js": "/movie-search/static/js/runtime~main.09bba5c0.js",
+  "runtime~main.js.map": "/movie-search/static/js/runtime~main.09bba5c0.js.map",
+  "static/css/2.c7762b16.chunk.css.map": "/movie-search/static/css/2.c7762b16.chunk.css.map",
+  "static/media/index.css": "/movie-search/static/media/SEGA.12a3db8b.woff",
+  "static/css/main.70dac56f.chunk.css.map": "/movie-search/static/css/main.70dac56f.chunk.css.map",
+  "index.html": "/movie-search/index.html",
+  "precache-manifest.f8d6843c195f6bb377c882fe55a1adeb.js": "/movie-search/precache-manifest.f8d6843c195f6bb377c882fe55a1adeb.js",
+  "service-worker.js": "/movie-search/service-worker.js"
 }
