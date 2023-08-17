@@ -2,22 +2,34 @@ import React, { useEffect, useState } from "react";
 import MovieList from "../Components/MovieList";
 import SearchBox from "../Components/SearchBox";
 
-const API_KEY = process.env.REACT_APP_IMDB_API_KEY;
-const SEARCH_API = `https://imdb-api.com/en/API/SearchMovie/${API_KEY}/`;
+const API_KEY = process.env.TMDB_API_KEY;
 const FAV_MOVIE = "Avengers";
+const SEARCH_QUERY = `https://api.themoviedb.org/3/search/movie/?query=`;
+const SEARCH_PARAMS = "&include_adult=false&language=en-US&page=1";
+const OPTIONS = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization: "Bearer " + API_KEY,
+  },
+};
 
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    getMovies(SEARCH_API + FAV_MOVIE);
-  }, [FAV_MOVIE]);
+    getMovies(SEARCH_QUERY, FAV_MOVIE, OPTIONS);
+  }, []);
 
   //API to retrieves movies via IMdB
-  const getMovies = async (API) => {
+  const getMovies = async (BASE_QUERY, MOVIE_NAME, OPTIONS) => {
     setMovies("");
-    const response = await fetch(API);
+    const response = await fetch(
+      BASE_QUERY + MOVIE_NAME + SEARCH_PARAMS,
+      OPTIONS
+    ).catch((err) => console.error("error: " + err));
+
     const responseJson = await response.json();
     setMovies(responseJson.results);
   };
@@ -26,7 +38,7 @@ const App = () => {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     if (searchTerm) {
-      getMovies(SEARCH_API + searchTerm);
+      getMovies(SEARCH_QUERY, searchTerm, OPTIONS);
       setSearchTerm("");
     }
   };
@@ -34,7 +46,7 @@ const App = () => {
   //Builds up search query from search bar
   const handleOnChange = (value) => {
     setSearchTerm(value);
-    getMovies(SEARCH_API + value);
+    getMovies(SEARCH_QUERY, value, OPTIONS);
   };
 
   return (

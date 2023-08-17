@@ -9,7 +9,7 @@ const MovieList = ({ movies }) => {
           <Movie
             key={i}
             id={movies[i].id}
-            image={movies[i].image}
+            image={movies[i].poster_path}
             title={movies[i].title}
           />
         );
