@@ -1,26 +1,16 @@
 {
   "files": {
-    "main.css": "/movie-search/static/css/main.1e7e43d6.chunk.css",
-    "main.js": "/movie-search/static/js/main.0698edee.chunk.js",
-    "main.js.map": "/movie-search/static/js/main.0698edee.chunk.js.map",
-    "runtime-main.js": "/movie-search/static/js/runtime-main.c5180cef.js",
-    "runtime-main.js.map": "/movie-search/static/js/runtime-main.c5180cef.js.map",
-    "static/css/2.31461e4f.chunk.css": "/movie-search/static/css/2.31461e4f.chunk.css",
-    "static/js/2.228cdba2.chunk.js": "/movie-search/static/js/2.228cdba2.chunk.js",
-    "static/js/2.228cdba2.chunk.js.map": "/movie-search/static/js/2.228cdba2.chunk.js.map",
-    "static/js/3.2ca72726.chunk.js": "/movie-search/static/js/3.2ca72726.chunk.js",
-    "static/js/3.2ca72726.chunk.js.map": "/movie-search/static/js/3.2ca72726.chunk.js.map",
+    "main.css": "/movie-search/static/css/main.b318cbba.css",
+    "main.js": "/movie-search/static/js/main.01c2b3bb.js",
+    "static/js/787.948d7581.chunk.js": "/movie-search/static/js/787.948d7581.chunk.js",
+    "static/media/SEGA.woff": "/movie-search/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
     "index.html": "/movie-search/index.html",
-    "static/css/2.31461e4f.chunk.css.map": "/movie-search/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.1e7e43d6.chunk.css.map": "/movie-search/static/css/main.1e7e43d6.chunk.css.map",
-    "static/js/2.228cdba2.chunk.js.LICENSE.txt": "/movie-search/static/js/2.228cdba2.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/movie-search/static/media/SEGA.47b4bfa9.woff"
+    "main.b318cbba.css.map": "/movie-search/static/css/main.b318cbba.css.map",
+    "main.01c2b3bb.js.map": "/movie-search/static/js/main.01c2b3bb.js.map",
+    "787.948d7581.chunk.js.map": "/movie-search/static/js/787.948d7581.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.c5180cef.js",
-    "static/css/2.31461e4f.chunk.css",
-    "static/js/2.228cdba2.chunk.js",
-    "static/css/main.1e7e43d6.chunk.css",
-    "static/js/main.0698edee.chunk.js"
+    "static/css/main.b318cbba.css",
+    "static/js/main.01c2b3bb.js"
   ]
 }
