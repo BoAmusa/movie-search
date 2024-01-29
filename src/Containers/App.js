@@ -5,7 +5,15 @@ import MovieList from "../Components/MovieList";
 import SearchBox from "../Components/SearchBox";
 
 const API_KEY = process.env.MOVIE_DB_API_KEY;
-console.log(API_KEY);
+if (!API_KEY) {
+  console.error(
+    "API key is not set. Please set the environment variable MOVIE_DB_API_KEY."
+  );
+} else {
+  // Proceed with using the API key
+  console.log("API key Success!!");
+}
+
 const FAV_MOVIE = "John Wick";
 const SEARCH_QUERY =
   "https://moviesdatabase.p.rapidapi.com/titles/search/title/";
