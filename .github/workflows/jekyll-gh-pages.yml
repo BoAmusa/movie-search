@@ -27,12 +27,12 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-     MOVIE_DB_API_KEY: ${{ vars.MOVIE_DB_API_KEY}} 
+     MOVIE_DB_API_KEY: ${{ secrets.MOVIE_DB_API_KEY}} 
      
     steps:
       - name: Read an env variable
         run: |
-          echo "Secret value from environment variable: $MOVIE_DB_API_KEY"
+          echo "My existing secret is ${{ secrets.MOVIE_DB_API_KEY}}"
 
           node -e 'console.log("Secret value from JavaScript:", process.env.MOVIE_DB_API_KEY);'
       - name: Checkout
