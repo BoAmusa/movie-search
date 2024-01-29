@@ -4,7 +4,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 import MovieList from "../Components/MovieList";
 import SearchBox from "../Components/SearchBox";
 
-const API_KEY = process.env.REACT_APP_MOVIE_DB_API_KEY;
+const API_KEY = process.env.MOVIE_DB_API_KEY;
 const FAV_MOVIE = "The Dark Knight";
 const SEARCH_QUERY =
   "https://moviesdatabase.p.rapidapi.com/titles/search/title/";
