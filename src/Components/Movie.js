@@ -1,18 +1,11 @@
 import React from "react";
 
 const TRAILER_BASE_SEARCH = `https://www.google.com/search?q=`;
-const TRAILER_PARAM = '+trailer'
-
-//API to retrieve movie trailer via IMdB
-const getMovieTrailer = async (QUERY, TITLE) => {
-  window.open(QUERY, TITLE);
-  
-};
+const TRAILER_PARAM = "+trailer";
 
 //Executes trailer redirection on click
-const handleOnPosterClick = (value) =>  () => {
-  console.log("Poster click " + value)
-  getMovieTrailer(TRAILER_BASE_SEARCH + value + TRAILER_PARAM, value);
+const handleOnPosterClick = (value) => () => {
+  window.open(TRAILER_BASE_SEARCH + value + TRAILER_PARAM);
 };
 
 const Movie = ({ title, image, id }) => (

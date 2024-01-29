@@ -5,7 +5,8 @@ import MovieList from "../Components/MovieList";
 import SearchBox from "../Components/SearchBox";
 
 const API_KEY = process.env.MOVIE_DB_API_KEY;
-const FAV_MOVIE = "The Dark Knight";
+console.log(API_KEY);
+const FAV_MOVIE = "John Wick";
 const SEARCH_QUERY =
   "https://moviesdatabase.p.rapidapi.com/titles/search/title/";
 const SEARCH_PARAMS = "?exact=false&titleType=movie";
