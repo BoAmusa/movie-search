@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/movie-search/static/css/main.324c4e05.css",
-    "main.js": "/movie-search/static/js/main.e8023b9d.js",
+    "main.js": "/movie-search/static/js/main.c8ade330.js",
     "static/js/787.948d7581.chunk.js": "/movie-search/static/js/787.948d7581.chunk.js",
     "static/media/SEGA.woff": "/movie-search/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
     "index.html": "/movie-search/index.html",
     "main.324c4e05.css.map": "/movie-search/static/css/main.324c4e05.css.map",
-    "main.e8023b9d.js.map": "/movie-search/static/js/main.e8023b9d.js.map",
+    "main.c8ade330.js.map": "/movie-search/static/js/main.c8ade330.js.map",
     "787.948d7581.chunk.js.map": "/movie-search/static/js/787.948d7581.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.324c4e05.css",
-    "static/js/main.e8023b9d.js"
+    "static/js/main.c8ade330.js"
   ]
 }
