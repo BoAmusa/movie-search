@@ -7,7 +7,7 @@ import SearchBox from "../Components/SearchBox";
 const API_KEY = process.env.REACT_APP_MOVIE_DB_API_KEY;
 if (!API_KEY) {
   console.error(
-    "API key is not set. Please set the environment variable MOVIE_DB_API_KEY."
+    "API key is not set. Please set the environment variable REACT_APP_MOVIE_DB_API_KEY."
   );
 } else {
   // Proceed with using the API key
