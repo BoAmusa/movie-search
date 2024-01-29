@@ -1,22 +1,18 @@
 import React from "react";
 
-const API_KEY = process.env.REACT_APP_IMDB_API_KEY;
-const TRAILER_API = `https://imdb-api.com/API/Trailer/${API_KEY}/`;
+const TRAILER_BASE_SEARCH = `https://www.google.com/search?q=`;
+const TRAILER_PARAM = '+trailer'
 
 //API to retrieve movie trailer via IMdB
-const getMovieTrailer = async (API) => {
-  const response = await fetch(API);
-  const responseJson = await response.json();
-  const trailer = responseJson.results;
-
-  if (trailer !== undefined && trailer !== null && trailer.length > 0) {
-    window.open(trailer.link, trailer.title);
-  }
+const getMovieTrailer = async (QUERY, TITLE) => {
+  window.open(QUERY, TITLE);
+  
 };
 
 //Executes trailer redirection on click
-const handleOnPosterClick = (value) => {
-  getMovieTrailer(TRAILER_API + value);
+const handleOnPosterClick = (value) =>  () => {
+  console.log("Poster click " + value)
+  getMovieTrailer(TRAILER_BASE_SEARCH + value + TRAILER_PARAM, value);
 };
 
 const Movie = ({ title, image, id }) => (
@@ -25,7 +21,7 @@ const Movie = ({ title, image, id }) => (
       class="card__image"
       src={image}
       alt={title}
-      onClick={handleOnPosterClick(id)}
+      onClick={handleOnPosterClick(title)}
     />
     <div className="card__content">
       <h3>{title}</h3>

@@ -1,4 +1,3 @@
-import { props } from 'bluebird';
 import React from 'react';
 
 const Scroll = (props) => {

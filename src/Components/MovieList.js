@@ -3,15 +3,20 @@ import Movie from "./Movie";
 
 const MovieList = ({ movies }) => {
   return (
-    <div classname="tc v-mid wrapper">
-      {movies.map((results, i) => {
+    <div className="tc wrapper">
+      {movies.map((movie, i) => {
+        const imageUrl = movie.primaryImage && movie.primaryImage.url;
+
+        // Only render Movie component if imageUrl is not null
         return (
-          <Movie
-            key={i}
-            id={movies[i].id}
-            image={movies[i].poster_path}
-            title={movies[i].title}
-          />
+          imageUrl && (
+            <Movie
+              key={i}
+              id={movie.id}
+              image={imageUrl}
+              title={movie.originalTitleText.text}
+            />
+          )
         );
       })}
     </div>
